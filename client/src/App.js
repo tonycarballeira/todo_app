@@ -5,7 +5,7 @@ import Axios from "axios";
 function App() {
   const [listofUsers, setListOfUsers] = useState([]);
     //if the app was running online you would replace localhost with the site url
-    
+    // this useEffect function makes an api call to the backend
     useEffect(() => {
       Axios.get("http://localhost:3001/getUsers").then((response) => {
         setListOfUsers(response.data);
