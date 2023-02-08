@@ -7,6 +7,7 @@ function App() {
   const [name, setName] = useState("");
   const [age, setAge] = useState(0);
   const [username, setUsername] = useState("")
+  const [todoList, setTodoList] = useState([]);
 
 
     //if the app was running online you would replace localhost with the site url
@@ -44,7 +45,7 @@ function App() {
           );          
         })}
       </div>
-      <div>
+      <div className='addUser'>
         <input type="text" placeholder='Name...' onChange={(event) => {
           setName(event.target.value);
         }}>
